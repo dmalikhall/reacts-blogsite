@@ -14,28 +14,40 @@ const Navbar = () => {
     return (
         <>
             <div className={`${!isMobileNavOpen ? 'mobile-nav' : 'mobile-nav open_mobile-nav'}`}>
-
                 <div className="mobile-header">
-                    <a href="#" className='home-button'>
+                    <Link to='/' className='home-button' onClick={closeMobileNav}>
                         <FaHome />
-                    </a>
-                    <a href="#">About us</a>
+                    </Link>
+
+                    {/* <a href="#">About us</a>
                     <a href="#">FAQ</a>
-                    <a href="#">Contact Us</a>
+                    <a href="#">Contact Us</a> */}
                 </div>
                 <div className="mobile-nav_header">
-                    <h1>Webb Inc</h1>
+                    <Link to='/' onClick={closeMobileNav}>
+                        <h1>Webb Inc</h1>
+
+                    </Link>
+
                     <button className="mobile-nav_close-btn" id="close_menu-btn" onClick={closeMobileNav}>
                         <FaWindowClose />
                     </button>
                 </div>
 
                 <div className="mobile-nav_list">
-                    <a className="mobile-nav-item" id="scroll-link" href="./architecture.html">Architecture</a>
+                    <Link to='/architecture' onClick={closeMobileNav}>
+                        Architecture
+
+                    </Link>
+                    <Link to='/design' onClick={closeMobileNav}>Design</Link>
+                    <Link to='/urbanism' onClick={closeMobileNav}>Urbanism</Link>
+                    <Link to='/ecobuilding' onClick={closeMobileNav}>Ecobuilding</Link>
+                    <Link to='/all-post' onClick={closeMobileNav}>All Posts</Link>
+                    {/* <a className="mobile-nav-item" id="scroll-link" href="./architecture.html">Architecture</a>
                     <a className="mobile-nav-item" id="scroll-link" href="./design.html">Design</a>
                     <a className="mobile-nav-item" id="scroll-link" href="./urbanism.html">Urbanism</a>
                     <a className="mobile-nav-item" id="scroll-link" href="./ecobuilding.html">Ecobuilding</a>
-                    <a className="mobile-nav-item" id="scroll-link" href="./all-post.html">All Posts</a>
+                    <a className="mobile-nav-item" id="scroll-link" href="./all-post.html">All Posts</a> */}
 
                     <div className="mobile-socials">
                         <a href="https://www.facebook.com/" >
@@ -52,12 +64,12 @@ const Navbar = () => {
             </div>
             <header>
                 <div className="header-info">
-                    <a href="#" className='home-button'>
+                    <Link to='/' className='home-button'>
                         <FaHome />
-                    </a>
-                    <a href="#">About us</a>
+                    </Link>
+                    {/* <a href="#">About us</a>
                     <a href="#">FAQ</a>
-                    <a href="#">Contact Us</a>
+                    <a href="#">Contact Us</a> */}
 
                 </div>
 
@@ -76,13 +88,23 @@ const Navbar = () => {
 
             <div className="container">
                 <nav>
-                    <div className="brand"><a href="./index.html">Webb Inc.</a></div>
+                    <div className="brand">
+                        <Link to='/'>Webb Inc.</Link>
+                    </div>
                     <div className="reg-navlist">
-                        <a href="./architecture.html">Architecture</a>
+                        <Link to='/architecture'>
+                            Architecture
+
+                        </Link>
+                        <Link to='/design'>Design</Link>
+                        <Link to='/urbanism'>Urbanism</Link>
+                        <Link to='/ecobuilding'>Ecobuilding</Link>
+                        <Link to='/all-post'>All Posts</Link>
+                        {/* <a href="./architecture.html">Architecture</a>
                         <a href="./design.html">Design</a>
                         <a href="./urbanism.html">Urbanism</a>
                         <a href="./ecobuilding.html">Ecobuilding</a>
-                        <a href="./all-post.html">All Posts</a>
+                        <a href="./all-post.html">All Posts</a> */}
                     </div>
                     <button className="menu-btn" id="open_menu-btn" onClick={openMobileNav}>
                         <FaBars />

@@ -67,6 +67,9 @@ header .header-info .home-button {
   text-decoration: none;
   color: inherit;
 }
+.home-button {
+  margin-top: 7px;
+}
 
 
 .mobile-nav {
@@ -90,6 +93,7 @@ header .header-info .home-button {
 
 .mobile-nav_header {
   display: flex;
+  justify-content: space-between;
   padding: 24px;
 }
 
