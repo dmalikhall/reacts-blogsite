@@ -1,0 +1,1 @@
+export const blogs_url = 'https://my-reacts-blog-api.herokuapp.com/blogs'

@@ -253,3 +253,17 @@ nav .reg-navlist a {
         margin: 0 auto;
     }
 }
+
+@media (min-width: 1500px) {
+    header {
+        padding-left: 12%;
+        padding-right: 12%;
+
+
+    }
+
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
