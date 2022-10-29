@@ -16,7 +16,7 @@ const Design = () => {
           const { name } = category.author[0];
 
           return (
-            <Link className="category-blog_list" key={id}>
+            <Link to={`/design/${category.id}`} className="category-blog_list" key={id}>
               <div className="image">
                 <img src={image} alt={title} />
               </div>

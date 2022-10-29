@@ -17,7 +17,7 @@ const Architecture = () => {
           const { name } = category.author[0];
 
           return (
-            <Link className="category-blog_list" key={id}>
+            <Link to={`/architecture/${category.id}`} className="category-blog_list" key={id}>
               <div className="image">
                 <img src={image} alt={title} />
               </div>
