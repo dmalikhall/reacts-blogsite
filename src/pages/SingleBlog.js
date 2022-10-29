@@ -53,7 +53,7 @@ const SingleBlog = () => {
       </div>
 
       <div className="back-to-blog">
-        <Link to="/all-post"><button>Back To Blogs</button></Link>
+        <Link to="/"><button>Back To Blogs</button></Link>
       </div>
 
     </>
