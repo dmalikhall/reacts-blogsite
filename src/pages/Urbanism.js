@@ -1,9 +1,14 @@
 import React from 'react';
 import { useGlobalContext } from '../context';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import Loading from '../components/Loading'
 
 const Urbanism = () => {
-  const {urbanismBlogs} = useGlobalContext();
+  const {urbanismBlogs, products_loading: loading} = useGlobalContext();
+
+  if(loading) {
+    return <Loading/>
+  }
   return (
     <main className='navigation-category_container'>
       <div className="heading">
@@ -34,7 +39,7 @@ const Urbanism = () => {
       </section>
 
       <div className="back-to-blog">
-        <Link to="/all-post"><button>Back To Blog</button></Link>
+        <Link to="/"><button>Back To Blogs</button></Link>
       </div>
 
     </main>

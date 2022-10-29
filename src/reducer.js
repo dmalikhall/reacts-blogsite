@@ -8,6 +8,7 @@ const blog_reducer = (state, action) => {
         const design_blogs = action.payload.filter((cat)=> cat.category === 'Design');
         const urbanism_blogs = action.payload.filter((cat)=> cat.category === 'Urbanism');
         const ecobuilding_blogs = action.payload.filter((cat)=> cat.category === 'Ecobuilding');
+        // const filtered_blogs = action.payload.splice(6,4);
         return {
             ...state, products_loading: false,
             allBlogs: action.payload,
@@ -15,6 +16,7 @@ const blog_reducer = (state, action) => {
             designBlogs: design_blogs,
             urbanismBlogs: urbanism_blogs,
             ecobuildingBlogs: ecobuilding_blogs,
+            // filteredBlogs: filtered_blogs
         }
     }
 

@@ -1,10 +1,16 @@
 import React from 'react';
 import { useGlobalContext } from '../context';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+import Loading from '../components/Loading'
 
 const SingleBlog = () => {
-  const { allBlogs } = useGlobalContext();
+  const { allBlogs, products_loading: loading } = useGlobalContext();
   const { blogId } = useParams();
+
+  if(loading) {
+    return <Loading/>
+  }
+
   
 
   const blog = allBlogs.find((blog) => blog.id === blogId);
@@ -44,6 +50,10 @@ const SingleBlog = () => {
           <p>{theEnd}</p>
         </div>
         <div className="dots">...</div>
+      </div>
+
+      <div className="back-to-blog">
+        <Link to="/all-post"><button>Back To Blogs</button></Link>
       </div>
 
     </>

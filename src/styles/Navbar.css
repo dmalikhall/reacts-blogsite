@@ -4,6 +4,10 @@ header {
     width: 100%;
 
     padding: 10px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header a {
@@ -19,7 +23,12 @@ header .header-info {
 }
 
 .header-social {
-    display: none;
+    display: block;
+    
+}
+
+.header-social a {
+    margin-left: 10px;
 }
 
 header .header-info .home-button {

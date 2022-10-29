@@ -19,9 +19,6 @@ const Navbar = () => {
                         <FaHome />
                     </Link>
 
-                    {/* <a href="#">About us</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Contact Us</a> */}
                 </div>
                 <div className="mobile-nav_header">
                     <Link to='/' onClick={closeMobileNav}>
@@ -42,12 +39,7 @@ const Navbar = () => {
                     <Link to='/design' onClick={closeMobileNav}>Design</Link>
                     <Link to='/urbanism' onClick={closeMobileNav}>Urbanism</Link>
                     <Link to='/ecobuilding' onClick={closeMobileNav}>Ecobuilding</Link>
-                    <Link to='/all-post' onClick={closeMobileNav}>All Posts</Link>
-                    {/* <a className="mobile-nav-item" id="scroll-link" href="./architecture.html">Architecture</a>
-                    <a className="mobile-nav-item" id="scroll-link" href="./design.html">Design</a>
-                    <a className="mobile-nav-item" id="scroll-link" href="./urbanism.html">Urbanism</a>
-                    <a className="mobile-nav-item" id="scroll-link" href="./ecobuilding.html">Ecobuilding</a>
-                    <a className="mobile-nav-item" id="scroll-link" href="./all-post.html">All Posts</a> */}
+                    
 
                     <div className="mobile-socials">
                         <a href="https://www.facebook.com/" >
@@ -67,9 +59,7 @@ const Navbar = () => {
                     <Link to='/' className='home-button'>
                         <FaHome />
                     </Link>
-                    {/* <a href="#">About us</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Contact Us</a> */}
+
 
                 </div>
 
@@ -99,12 +89,7 @@ const Navbar = () => {
                         <Link to='/design'>Design</Link>
                         <Link to='/urbanism'>Urbanism</Link>
                         <Link to='/ecobuilding'>Ecobuilding</Link>
-                        <Link to='/all-post'>All Posts</Link>
-                        {/* <a href="./architecture.html">Architecture</a>
-                        <a href="./design.html">Design</a>
-                        <a href="./urbanism.html">Urbanism</a>
-                        <a href="./ecobuilding.html">Ecobuilding</a>
-                        <a href="./all-post.html">All Posts</a> */}
+
                     </div>
                     <button className="menu-btn" id="open_menu-btn" onClick={openMobileNav}>
                         <FaBars />

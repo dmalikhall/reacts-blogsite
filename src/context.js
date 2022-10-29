@@ -9,7 +9,6 @@ const AppContext = React.createContext();
 
 const initialState = {
     allBlogs: [],
-    // filteredBlogs: [],
     architectureBlogs: [],
     designBlogs: [],
     urbanismBlogs: [],
