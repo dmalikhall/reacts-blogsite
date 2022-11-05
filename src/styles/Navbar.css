@@ -98,6 +98,7 @@ header .header-info .home-button {
     border: none;
 
     cursor: pointer;
+    color: black;
 }
 
 .mobile-nav_list {
@@ -173,6 +174,7 @@ nav .menu-btn {
 
     cursor: pointer;
     margin-top: 6px;
+    color: black;
 }
 
 nav .reg-navlist {
